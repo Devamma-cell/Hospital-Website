@@ -1,11 +1,8 @@
-# CarePoint Hospital Website (Frontend Demo)
+# CarePoint Hospital Website frontend website
 
 ## Run
 Open `index.html` in a browser. Bootstrap is loaded from its CDN, so internet access is needed for Bootstrap styling and fonts.
 
-## Demo admin login
-- Username: `admin`
-- Password: `admin123`
 
 ## Included
 - Responsive homepage with About, Departments, Doctors, Services, Facilities, Testimonials, Gallery, Health Tips, and Contact sections

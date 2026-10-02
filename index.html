@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CarePoint Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container"><a class="navbar-brand fw-bold text-primary" href="#home">✚ CarePoint</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Health Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal">Book Appointment</button></li>
+                    <li class="nav-item ms-lg-2"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#userLoginModal">User Login</button></li>
+                    <li class="nav-item ms-lg-2"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Admin</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7"><span class="badge rounded-pill bg-info-subtle text-primary mb-3">Your health, our
+                        priority</span>
+                    <h1 class="display-4 fw-bold">Compassionate care.<br><span class="text-primary">Better
+                            health.</span></h1>
+                    <p class="lead text-secondary my-4">Expert doctors, modern facilities, and personalized care for
+                        every stage of life.</p><a href="#doctors" class="btn btn-primary btn-lg me-2">Meet our
+                        doctors</a><button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#appointmentModal">Book a visit</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-art">
+                        <div class="display-1">✚</div>
+                        <h3>Care that puts you first</h3>
+                        <p>Modern medicine, delivered with empathy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="eyebrow">ABOUT CAREPOINT</p>
+                    <h2 class="section-title">A healthier community starts here</h2>
+                    <p class="text-secondary">CarePoint Hospital is committed to safe, accessible, patient-centered
+                        healthcare. Our multidisciplinary team combines clinical expertise with thoughtful support for
+                        patients and families.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h3 class="text-primary">24/7</h3>
+                            <p class="text-secondary">Emergency support</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-primary">15+</h3>
+                            <p class="text-secondary">Specialty departments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="departments" class="section bg-light">
+        <div class="container">
+            <p class="eyebrow text-center">OUR SPECIALTIES</p>
+            <h2 class="section-title text-center">Departments</h2>
+            <div id="departmentList" class="row g-4 mt-2"></div>
+        </div>
+    </section>
+    <section id="doctors" class="section">
+        <div class="container">
+            <p class="eyebrow text-center">MEET OUR TEAM</p>
+            <h2 class="section-title text-center">Our Doctors</h2>
+            <div id="doctorList" class="row g-4 mt-2"></div>
+        </div>
+    </section>
+   <section id="services" class="section bg-light">
+    <div class="container">
+
+        <p class="eyebrow text-center">WHAT WE OFFER</p>
+
+        <h2 class="section-title text-center">
+            Our Services
+        </h2>
+
+        <p class="text-center text-secondary mb-5">
+            Comprehensive healthcare services focused on your health and well-being.
+        </p>
+
+        <div id="serviceList" class="row g-4 mt-2"></div>
+
+    </div>
+</section>
+   <section id="facilities" class="section">
+    <div class="container">
+
+        <p class="eyebrow text-center">OUR FACILITIES</p>
+
+        <h2 class="section-title text-center">
+            Modern Facilities
+        </h2>
+
+        <p class="text-center text-secondary mb-5">
+            Advanced facilities designed to provide safe, comfortable,
+            and quality healthcare.
+        </p>
+
+        <div id="facilityList" class="row g-4 mt-2"></div>
+
+    </div>
+</section>
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <p class="eyebrow text-center">KIND WORDS</p>
+            <h2 class="section-title text-center">Patient Testimonials</h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-lg-8">
+                    <div class="quote-card">
+                        <div class="text-warning fs-4">★★★★★</div>
+                        <blockquote class="fs-5">“The team was caring, attentive, and explained every step of my
+                            treatment.”</blockquote><strong>— A grateful patient</strong>
+                        <p class="small text-secondary mt-2">Illustrative testimonial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="gallery" class="section bg-light">
+
+    <div class="container">
+
+        <p class="eyebrow text-center">OUR FACILITIES</p>
+
+        <h2 class="section-title text-center">
+            Hospital Gallery
+        </h2>
+
+        <div id="galleryList" class="row g-4 mt-2"></div>
+
+    </div>
+
+</section>
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <p class="eyebrow text-center">WELLNESS & PREVENTION</p>
+            <h2 class="section-title text-center">Health Tips</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <article class="blog-card"><span class="badge bg-info-subtle text-primary">Wellness</span>
+                        <h5 class="mt-3">Build a heart-healthy routine</h5>
+                        <p>Move regularly, eat a balanced diet, and discuss your personal risk factors with a clinician.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-card"><span class="badge bg-info-subtle text-primary">Prevention</span>
+                        <h5 class="mt-3">Keep up with health screenings</h5>
+                        <p>Recommended screenings depend on age, history, and individual risk. Ask your healthcare
+                            provider.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-card"><span class="badge bg-info-subtle text-primary">Everyday health</span>
+                        <h5 class="mt-3">Make sleep a priority</h5>
+                        <p>A consistent sleep schedule and calming bedtime routine can support overall wellbeing.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="text-secondary">Questions or feedback? Send us a message.</p>
+                    <p>📍 123 Wellness Avenue, Bengaluru</p>
+                    <p>☎ +91 80 1234 5678</p>
+                    <p>✉ hello@carepoint.example</p>
+                    <p class="small text-secondary">Demo contact details—replace before publishing.</p>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="form-card">
+                        <div class="mb-3"><label class="form-label">Full name</label><input class="form-control"
+                                name="name" required></div>
+                        <div class="mb-3"><label class="form-label">Email</label><input type="email"
+                                class="form-control" name="email" required></div>
+                        <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control"
+                                name="message" rows="4" required></textarea></div><button class="btn btn-primary">Send
+                            enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 CarePoint
+                Hospital</span><span>Care with compassion · Privacy · Accessibility</span></div>
+    </footer>
+    <!-- Appointment modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="appointmentForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Book an Appointment</h5><button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3"><label class="form-label">Patient name</label><input name="patient"
+                                class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label">Email</label><input name="email" type="email"
+                                class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label">Phone</label><input name="phone"
+                                class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label">Department</label><select name="department"
+                                id="apptDepartment" class="form-select" required></select></div>
+                        <div class="mb-3"><label class="form-label">Doctor</label><select name="doctor" id="apptDoctor"
+                                class="form-select" required></select></div>
+                        <div class="mb-3"><label class="form-label">Preferred date</label><input name="date" type="date"
+                                class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label">Note (optional)</label><textarea name="note"
+                                class="form-control" rows="2"></textarea></div>
+                        <p class="small text-secondary">Demo only: do not enter sensitive medical information.</p>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary">Submit request</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    ```html
+    <!-- User Login Modal -->
+    <div class="modal fade" id="userLoginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Patient Login</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Login and Register Tabs -->
+                    <ul class="nav nav-pills nav-fill mb-3">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="userLoginTab" type="button">
+                                Login
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="userRegisterTab" type="button">
+                                Register
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Login Form -->
+                    <form id="userLoginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" required>
+                        </div>
+
+                        <div id="userLoginError" class="text-danger small mb-2"></div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Login
+                        </button>
+                    </form>
+
+                    <!-- Registration Form -->
+                    <form id="userRegisterForm" class="d-none">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" name="phone" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" minlength="6" required>
+                        </div>
+
+                        <div id="userRegisterError" class="text-danger small mb-2"></div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Create Account
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    ```
+    <!-- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <form id="loginForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Admin Login</h5><button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body"><label class="form-label">Username</label><input name="username"
+                            class="form-control mb-3" required><label class="form-label">Password</label><input
+                            name="password" type="password" class="form-control" required>
+                        <p class="small text-secondary mt-3">Demo login: admin / admin123</p>
+                        <div id="loginError" class="text-danger small"></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary w-100">Login</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Admin dashboard -->
+    <div class="modal fade" id="adminModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Admin Dashboard</h5><button class="btn-close"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-outline-primary btn-sm"
+                            data-pane="appointments">Appointments</button><button class="btn btn-outline-primary btn-sm"
+                            data-pane="doctors">Doctors</button><button class="btn btn-outline-primary btn-sm"
+                            data-pane="departments">Departments</button><button class="btn btn-outline-primary btn-sm"
+                            data-pane="patients">Patients</button><button class="btn btn-outline-primary btn-sm"
+                            data-pane="enquiries">Enquiries</button><button
+                            class="btn btn-outline-danger btn-sm ms-auto" id="logoutBtn">Logout</button></div>
+                    <div id="adminContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast">
+            <div class="toast-body" id="toastText"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- ================= PATIENT DASHBOARD MODAL ================= -->
+    <div class="modal fade" id="patientDashboardModal" tabindex="-1" aria-labelledby="patientDashboardTitle"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header patient-dashboard-header">
+                    <div>
+                        <h5 class="modal-title" id="patientDashboardTitle">
+                            <i class="bi bi-person-circle"></i>
+                            My Patient Dashboard
+                        </h5>
+                        <p class="mb-0 text-white-50">
+                            Manage your appointments
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+
+                    <div id="patientDashboardContent">
+                        <div class="text-center py-4">
+                            <div class="spinner-border text-primary"></div>
+                            <p class="mt-2">Loading your dashboard...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                        Logout
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
